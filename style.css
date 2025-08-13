@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #111;
+  color: #fff;
+}
+/* Logo Style */
+.logo {
+  width: 50px;        /* Small size */
+  height: 50px;       /* Equal height for circle */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover;  /* Ensures the image fits properly */
+  border: 2px solid white; /* Clean border for professional look */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Subtle shadow */
+  margin-right: 15px;
+}
+
+header img {
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #f0f8ff, #e3f2fd); /* Light premium gradient */
+  color: #222;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0288d1;
+}
+
+.hero-content h1 span {
+  color: #ffb300; /* Premium gold accent */
+}
+
+.hero-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #555;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #0288d1;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #0277bd;
+}
+
+/* 3D Graphic */
+.hero-graphic img {
+  width: 450px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Floating effect for premium feel */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-graphic img {
+    margin-top: 40px;
+    width: 300px;
+  }
+}
+
+
+section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.about-text {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: center;
+}
+
+.flyer-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flyer {
+  background: linear-gradient(135deg, #004d40, #00796b); /* Premium Green */
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flyer h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #e0f2f1;
+}
+
+.flyer p {
+  font-size: 1rem;
+  color: #f1f8f6;
+  line-height: 1.6;
+}
+
+.flyer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 121, 107, 0.5);
+}
+
+/* ✅ Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .flyer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: linear-gradient(90deg, #0288d1, #03a9f4); /* Premium Sky Blue */
+  color: #fff;
+  position: relative;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.brand-name span {
+  color: #ffe082; /* Gold accent for MEDIA */
+}
+
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #e1f5fe;
+  margin-top: 4px;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffe082; /* Gold hover for premium touch */
+}
+/* GALLERY SECTION */
+#gallery {
+  padding: 80px 50px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.gallery-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* SERVICES SECTION */
+#services {
+  padding: 80px 50px;
+  background: #f4f9ff;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
